@@ -1,0 +1,55 @@
+{
+    "name": "awwward-components",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+        "@tailwindcss/postcss": "^4.2.4",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "lucide-react": "^1.14.0",
+        "next": "16.2.4",
+        "next-themes": "^0.4.6",
+        "postcss": "^8.5.12",
+        "radix-ui": "^1.4.3",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+        "shadcn": "^4.6.0",
+        "tailwind-merge": "^3.5.0",
+        "tailwindcss": "^4.2.4",
+        "tw-animate-css": "^1.4.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
+        "@eslint/js": "^9.39.4",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "eslint": "^9",
+        "eslint-config-next": "16.2.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import-x": "^4.16.2",
+        "globals": "^17.5.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.1",
+        "prettier": "^3.8.3",
+        "typescript": "^5"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css}": [
+            "prettier --write"
+        ]
+    }
+}
